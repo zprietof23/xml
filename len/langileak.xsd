@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Elemento raíz -->
+    <xs:element name="langileak">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element name="bulegaria" type="bulegariaType"/>
+                    <xs:element name="saltzailea" type="saltzaileaType"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tipo común para nagusia -->
+    <xs:complexType name="nagusiaType">
+        <xs:sequence>
+            <xs:element name="izenAbizena" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <!-- Tipo bulegaria -->
+    <xs:complexType name="bulegariaType">
+        <xs:sequence>
+            <xs:element name="izena" type="xs:string"/>
+            <xs:element name="abizena" type="xs:string"/>
+            <xs:element name="emaila" type="xs:string"/>
+            <xs:element name="telefonoa" type="xs:string"/>
+            <xs:element name="data" type="xs:date"/>
+            <xs:element name="nagusia" type="nagusiaType" minOccurs="0"/>
+            <xs:element name="lanpostua">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="id" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <!-- Tipo saltzailea -->
+    <xs:complexType name="saltzaileaType">
+        <xs:sequence>
+            <xs:element name="izena" type="xs:string"/>
+            <xs:element name="abizena" type="xs:string"/>
+            <xs:element name="emaila" type="xs:string"/>
+            <xs:element name="telefonoa" type="xs:string"/>
+            <xs:element name="data" type="xs:date"/>
+            <xs:element name="nagusia" type="nagusiaType" minOccurs="0"/>
+            <xs:element name="erabiltzailea" type="xs:string"/>
+            <xs:element name="pasahitza" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>
