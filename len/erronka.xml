@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<langileak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="langileak.xsd">
+    <bulegaria id="12345678">
+        <izena>Jon</izena>
+        <abizena>Garcia</abizena>
+        <emaila>jon.garcia@example.com</emaila>
+        <telefonoa>6.123.456.78</telefonoa>
+        <data>2026-01-20</data>
+        <nagusia id="87654321">
+            <izenAbizena>Jon Lopez</izenAbizena>
+        </nagusia>
+        <lanpostua id="LP01">Administraria</lanpostua>
+    </bulegaria>
+    <bulegaria id="12345679">
+        <izena>Ane</izena>
+        <abizena>Lopez</abizena>
+        <emaila>ane.lopez@example.com</emaila>
+        <telefonoa>6.234.567.89</telefonoa>
+        <data>2025-10-12</data>
+        <lanpostua id="LP02">Kontularia</lanpostua>
+    </bulegaria>
+    <saltzailea id="88888888">
+        <izena>Markel</izena>
+        <abizena>Ruiz</abizena>
+        <emaila>markel.ruiz@example.com</emaila>
+        <telefonoa>7.987.654.32</telefonoa>
+        <data>2025-01-21</data>
+        <erabiltzailea>markelr</erabiltzailea>
+        <pasahitza>Admin123</pasahitza>
+    </saltzailea>
+    <saltzailea id="88888889">
+        <izena>Nerea</izena>
+        <abizena>Etxeberria</abizena>
+        <emaila>nerea.etxeberria@example.com</emaila>
+        <telefonoa>7.876.543.21</telefonoa>
+        <data>2026-01-15</data>
+        <nagusia id="88888888">
+            <izenAbizena>Markel Ruiz</izenAbizena>
+        </nagusia>
+        <erabiltzailea>netxeberria</erabiltzailea>
+        <pasahitza>Clave987</pasahitza>
+    </saltzailea>
+    <bulegaria id="12345680">
+        <izena>Luken</izena>
+        <abizena>Sanz</abizena>
+        <emaila>luken.sanz@example.com</emaila>
+        <telefonoa>6.345.678.90</telefonoa>
+        <data>2024-05-30</data>
+        <nagusia id="12345678">
+            <izenAbizena>Jon Garcia</izenAbizena>
+        </nagusia>
+        <lanpostua id="LP03">Arduraduna</lanpostua>
+    </bulegaria>
+    <saltzailea id="88888890">
+        <izena>Unai</izena>
+        <abizena>Sanchez</abizena>
+        <emaila>unai.sanchez@example.com</emaila>
+        <telefonoa>7.765.432.10</telefonoa>
+        <data>2024-12-01</data>
+        <erabiltzailea>usanchez</erabiltzailea>
+        <pasahitza>Seguru123!</pasahitza>
+    </saltzailea>
+</langileak>
