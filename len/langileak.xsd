@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <!-- Elemento raíz -->
     <xs:element name="langileak">
         <xs:complexType>
             <xs:sequence>
@@ -13,7 +12,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Tipo común para nagusia -->
     <xs:complexType name="nagusiaType">
         <xs:sequence>
             <xs:element name="izenAbizena" type="xs:string"/>
@@ -21,7 +19,6 @@
         <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
 
-    <!-- Tipo bulegaria -->
     <xs:complexType name="bulegariaType">
         <xs:sequence>
             <xs:element name="izena" type="xs:string"/>
@@ -43,7 +40,6 @@
         <xs:attribute name="id" type="xs:string" use="required"/>
     </xs:complexType>
 
-    <!-- Tipo saltzailea -->
     <xs:complexType name="saltzaileaType">
         <xs:sequence>
             <xs:element name="izena" type="xs:string"/>
