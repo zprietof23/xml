@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Ez da beharrezko DTD erabiltzea, zeren eta XSD erabiltzen ari gara, baina eskatzen digutenes erebai sartu dugu.
+<!DOCTYPE langileak SYSTEM "erronka.dtd">
+-->
 <langileak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="langileak.xsd">
     <bulegaria id="12345678">
         <izena>Jon</izena>

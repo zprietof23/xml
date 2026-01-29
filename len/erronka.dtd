@@ -1,0 +1,34 @@
+<!ELEMENT langileak (bulegaria | saltzailea)+>
+
+<!-- ===== NAGUSIA ===== -->
+<!ELEMENT nagusia (izenAbizena)>
+<!ATTLIST nagusia
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT izenAbizena (#PCDATA)>
+
+<!-- ===== BULEGARIA ===== -->
+<!ELEMENT bulegaria (izena, abizena, emaila, telefonoa, data, nagusia?, lanpostua)>
+<!ATTLIST bulegaria
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT lanpostua (#PCDATA)>
+<!ATTLIST lanpostua
+    id CDATA #REQUIRED
+>
+
+<!-- ===== SALTZAILEA ===== -->
+<!ELEMENT saltzailea (izena, abizena, emaila, telefonoa, data, nagusia?, erabiltzailea, pasahitza)>
+<!ATTLIST saltzailea
+    id CDATA #REQUIRED
+>
+
+<!ELEMENT izena (#PCDATA)>
+<!ELEMENT abizena (#PCDATA)>
+<!ELEMENT emaila (#PCDATA)>
+<!ELEMENT telefonoa (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT erabiltzailea (#PCDATA)>
+<!ELEMENT pasahitza (#PCDATA)>
